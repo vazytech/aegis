@@ -1,0 +1,5 @@
+{
+  "name": "Aegis AI Pentest Agent",
+  "description": "An AI-driven penetration testing dashboard that combines automated security scanning with Gemini-powered vulnerability analysis and remediation guidance.",
+  "requestFramePermissions": []
+}
