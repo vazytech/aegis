@@ -3,7 +3,8 @@
  * Connects frontend to the real scanning backend
  */
 
-const BACKEND_URL = 'http://localhost:3001';
+// Use environment variable for production, fallback to localhost for development
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001';
 
 export interface ScanRequest {
   targetUrl: string;
