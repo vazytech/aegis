@@ -3,8 +3,8 @@
  * Connects frontend to the real scanning backend
  */
 
-// Use environment variable for production, fallback to localhost for development
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001';
+// Use empty string for Vercel (relative URLs), or localhost for local dev
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL ?? '';
 
 export interface ScanRequest {
   targetUrl: string;
